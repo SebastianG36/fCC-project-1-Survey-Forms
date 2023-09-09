@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  
+  <body>
+    <h1 id='title'>Posco Survey Form</h1>
+    <p id='description'>
+      My first coding project, a survey
+    </p>
+    
+    <form id='survey-form'>
+      <label id='name-label' for='name'>
+        Name
+        <input id='name' type='text' placeholder='Posco Burrows' required></label>
+      <label id="email-label" for='email'>
+        Email
+        <input id='email' type='email' placeholder='myemail@posco.com' required>
+      </label>
+      <label id='number-label' for='number' class='botmargin'>
+        Age
+        <input id='number' type='number' min='18' max='120' placeholder='23' required></label>
+      <label class='botmargin'>How did you hear about me?
+        <select id='dropdown'>
+          <option value="">(select one)</option>
+          <option value="1">LinkedIn</option>
+          <option value="2">Referral</option>
+          <option value="3">freeCodeCamp Forum</option>
+          <option value="4">Other</option>
+        </select>
+      </label>
+      <label>What are you looking for?</label>
+      <label>
+        <input id='wp' value='wp' type='radio' class='inline' name='wlf'>Web page 
+      </label>
+      <label class='botmargin'>
+        <input id='ftd' value='ftd' type='radio' class='inline' name='wlf'>Full time developer
+      </label>
+      <label>What sounds like your perfect webpage?</label>
+      <label><input id='niceimages' value='niceimages' type='checkbox' class='inline'>Nice images</label>
+      <label><input id='goodhumor' value='goodhumor' type='checkbox' class='inline'>Good humor</label>
+      <label class='botmargin'><input id='professional' value='professional' type='checkbox' class='inline'>Professional and sober</label>
+      <label>Would you like to leave a message? <textarea rows="3" cols="30" placeholder='I love this survey!'></textarea> </label>
+
+      <input id='submit' type="submit" value="Submit" />
+
+
+    </form>
+         
+  </body>
+</html>
